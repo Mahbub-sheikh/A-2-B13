@@ -81,8 +81,8 @@ body {
 
 .main-circle {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 350px;
+    height: 350px;
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
@@ -92,6 +92,12 @@ body {
 .circle-bg {
     position: absolute;
     width: 100%;
+    /* width: 350px;
+    height: 350px; */
+}
+.description{
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .microphone-img {
