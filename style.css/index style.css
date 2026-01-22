@@ -19,6 +19,11 @@ body {
     padding: 20px 8%;
     background: transparent;
 }
+/* media ar jonno .........  */
+.hamburger-menu {
+    display: none; 
+}
+/* ........ */
 
 .logo {
     font-size: 24px;
@@ -104,10 +109,10 @@ body {
 
 .new-badge {
     position: absolute;
-    top: 20px;
+    margin-top: ; top: 40px;
     right: 5px;
-    background: #00ff00;
-    padding: 2px 8px;
+    background-color: #00ff00;
+    padding: 4px 8px;
     border-radius: 10px;
     font-size: 10px;
     font-weight: bold;
@@ -408,7 +413,6 @@ body {
     padding: 80px 0;
 }
 
-/* Background Image  */
 .footer-bg {
     position: absolute;
     width: 100%;
@@ -468,4 +472,143 @@ body {
     color: rgba(255, 255, 255, 0.6);
     margin-top: 20px;
     letter-spacing: 0.5px;
+}
+/* style.css */
+@media screen and (max-width: 576px) {
+    .hero-section,
+    .hero-container,
+    .button-group,
+    .about-section,
+    .techwave-section,
+    .episodes-section,
+    .footer,
+    .container,
+    .section-desc,
+    .stat-item,
+    .sociale-links,
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 20px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Icon ar box styling */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    /* Sada 3ti dag */
+    .hamburger-menu span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #ffffff; 
+        border-radius: 2px;
+    }
+
+    /* baki links gulo hide  */
+    .nav-links, .subscribe-btn {
+        display: none;
+    }
+
+    /* Links ebong Button hide */
+    .nav-links, 
+    .subscribe-btn {
+        display: none;
+    }
+
+    /* Logo size thik kora */
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .stats-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 10px;
+        width: 100%;
+    }
+    .back{
+     
+    }
+    .bento-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background: #1a0836;
+        padding: 25px;
+        border-radius: 20px;
+    }
+    .episodes-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .episode-card {
+        background: #1a0836;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: left; 
+    }
+
+    .episode-info {
+        padding: 20px;
+    }
+    .host-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+    .sociale-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    .new-badge{
+      margin-top: 40PX;
+      padding: 5px 10px;
+    }
+    .main-circle{
+       width: 250px;
+    height: 250px;
+    }
 }
